@@ -61,4 +61,4 @@ function hi()
     let addition = 5 + 10;
     console.log(addition);
 }
-hi();   /15
+hi();   //15
