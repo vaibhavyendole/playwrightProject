@@ -50,3 +50,33 @@ switch(day){
 	default :
 		console.log("Please Enter Number between 1 to 7 ");
 }
+
+
+function calculate(num1, num2, operator) {
+	let num3;
+	switch(operator){
+		case "*" : 
+			num3 = num1 * num2;
+			console.log(num3);
+			break;
+
+		case "/" : 
+			num3 = num1 / num2;
+			console.log(num3);
+			break;
+		
+		case "+" : 
+			num3 = num1 + num2;
+			console.log(num3);
+			break;
+
+		case "-" : 
+			num3 = num1 - num2;
+			console.log(num3);
+			break;
+
+		default : 
+			console.log(`${operator} is an Invalid operator`);
+	}
+}
+calculate(5, 7, "*");
