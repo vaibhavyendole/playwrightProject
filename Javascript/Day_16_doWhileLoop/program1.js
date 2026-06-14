@@ -23,3 +23,30 @@ while(temp2>0)
     temp2 = Math.floor(temp2/10) // 1234
 }
 console.log(`Reverse Number of Num ${orgNum} is ${revNum}`)
+
+
+
+// reverse Num 
+let orgNum1 = "12345";
+let revNum1 = 0;
+let temp1 = orgNum1;
+
+while (temp1 > 0){
+    let digit1 =  temp1 % 10;    // 5 
+    revNum1 = revNum1*10 + digit1;
+    temp1 = Math.floor(temp1 / 10)  // 1234
+
+}
+console.log(revNum1)
+
+// Addition of Number 
+let nBefAdd = 12345;
+let nAftAdd  = 0; 
+let temp3 = nBefAdd;
+
+while(temp3 > 0){
+    digit = temp3 % 10 ; // 5
+    nAftAdd = nAftAdd + digit ;
+    temp3 = Math.floor(temp3 / 10);
+}
+console.log(nAftAdd)

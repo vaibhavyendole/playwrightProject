@@ -13,15 +13,22 @@ do
 } while (d1 <= 10);
 
 
-// pattern program 
-//start 
-
-let rows  = 5; 
-for(let i = 1; i<=rows; i++)
-{
+// Pattern 
+let rows = 5; 
+for(let i = 1; i<= rows; i++){
     let pattern = "";
-    for( j= 1; J<=i; j++)
-    {
+    for(let j = 1; j<= i; j++){
         pattern = pattern + "* "
     }
+    console.log(pattern)
 }
+
+
+
+
+let rollStart = 3; 
+do{
+    console.log(rollStart);
+    rollStart++
+}
+while(rollStart <=2)                // 3

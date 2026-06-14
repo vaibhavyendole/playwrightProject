@@ -60,3 +60,16 @@ function getColors(){
 let colors = getColors();
 console.log(colors)  // [ 'Red', 'Green', 'Yellow' ]
 console.log(colors[1]) // Green
+
+
+// Code After Return is Unreachable : Once return executes, function execution stops immediately.
+function test() {
+// This line executes
+console.log("This runs");
+return "Hello";
+// Unreachable Code
+// This line never executes
+console.log("Hi");
+}
+let test1 = test();
+console.log(test1);
