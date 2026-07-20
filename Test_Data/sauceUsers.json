@@ -1,0 +1,44 @@
+[
+    {
+        "testId": "TC01",
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "valid": true,
+        "reason": "Valid standard login"
+    },
+    {
+        "testId": "TC02",
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "valid": false,
+        "reason": "User is locked out"
+    },
+    {
+        "testId": "TC03",
+        "username": "problem_user",
+        "password": "secret_sauce",
+        "valid": true,
+        "reason": "Logs in with UI issues"
+    },
+    {
+        "testId": "TC04",
+        "username": "performance_glitch_user",
+        "password": "secret_sauce",
+        "valid": true,
+        "reason": "Slow login"
+    },
+    {
+        "testId": "TC05",
+        "username": "invalid_user",
+        "password": "wrong_pass",
+        "valid": false,
+        "reason": "Invalid credentials"
+    },
+    {
+        "testId": "TC06",
+        "username": "",
+        "password": "",
+        "valid": false,
+        "reason": "Empty username & password"
+    }
+]

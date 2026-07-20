@@ -1,0 +1,67 @@
+[
+    {
+        "testCaseId": "EMP_TC_001",
+        "description": "Create permanent employee with full profile",
+        "personal": {
+            "firstName": "Rahul",
+            "middleName": "Kumar",
+            "lastName": "Sharma",
+            "employeeId": "EMP1001",
+            "dob": "1990-05-14",
+            "nationality": "Indian",
+            "maritalStatus": "Married"
+        },
+        "job": {
+            "title": "Senior QA Engineer",
+            "category": "Professionals",
+            "joiningDate": "2021-03-01",
+            "employmentStatus": "Full-Time Permanent",
+            "location": "Bangalore"
+        },
+        "contact": {
+            "street": "12 MG Road",
+            "city": "Bangalore",
+            "state": "Karnataka",
+            "zip": "560001",
+            "mobile": "9876543210",
+            "workEmail": "rahul.sharma@company.com"
+        },
+        "salary": {
+            "component": "Basic",
+            "amount": 95000,
+            "currency": "INR",
+            "payFrequency": "Monthly"
+        },
+        "expectedResult": "Employee created successfully"
+    },
+    {
+        "testCaseId": "EMP_TC_002",
+        "description": "Create contract employee - missing salary (negative)",
+        "personal": {
+            "firstName": "Sneha",
+            "middleName": "",
+            "lastName": "Patil",
+            "employeeId": "EMP1002",
+            "dob": "1994-11-02",
+            "nationality": "Indian",
+            "maritalStatus": "Single"
+        },
+        "job": {
+            "title": "QA Analyst",
+            "category": "Professionals",
+            "joiningDate": "2023-07-10",
+            "employmentStatus": "Contract",
+            "location": "Pune"
+        },
+        "contact": {
+            "street": "45 FC Road",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "zip": "411005",
+            "mobile": "9123456780",
+            "workEmail": "sneha.patil@company.com"
+        },
+        "salary": null,
+        "expectedResult": "Salary is mandatory"
+    }
+]
