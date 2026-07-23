@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test"; 
 
-import userData from "../../Test_Data/userData.json";
+import userData from "../../../Test_Data/userData.json";
 
 // 1. Print using for Loop
 for(let i = 0; i < userData.length; i++){
