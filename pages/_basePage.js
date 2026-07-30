@@ -7,7 +7,7 @@ export class _basePage{
     // Navigate to URL 
     async navigateToUrl(url){
         // provide a valid waitUntil value: 'load', 'domcontentloaded' or 'networkidle'
-        await this.page.goto(url, { waitUntil: 'networkidle' });
+        await this.page.goto(url, { waitUntil: 'domcontentloaded' });
     }
 
     // Add Value in using fill method
@@ -74,5 +74,7 @@ export class _basePage{
     async waitForLoad() {
         await this.page.waitForLoadState("load");
     }
+
+    await 
 
 }

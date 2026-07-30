@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 // Use a relative path to the test data file
-import loginData from "../../Test_Data/loginData.json";
+import loginData from "../../../Test_Data/loginData.json";
 
 for(const data of loginData){
     test(`LoginValidation with ${data.username} @lms59.3`, async({ page }) => {
@@ -31,7 +31,7 @@ for(const data of loginData){
 }
 //----------------------------------------------------------------------------------------------------------------//
 
-import regData from "../../Test_Data/registerUsers.json"; 
+import regData from "../../../Test_Data/registerUsers.json"; 
 for(const rData of regData){
 
     test(`Reg of ${rData.firstName} ${rData.lastName} @lms59.4`, async({ page }) => {
