@@ -1,6 +1,6 @@
 {
     "name" : "dev", 
-    "baseURL" : "https://dev.saucedemo.com", 
+    "baseURL" : "https://www.google.com", 
     "credentials" : {
         "password" : "secret_sauce", 
 

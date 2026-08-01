@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
-import env from './config/env.config.js';
+import env from './config/env.config';
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv

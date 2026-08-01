@@ -75,6 +75,4 @@ export class _basePage{
         await this.page.waitForLoadState("load");
     }
 
-    await 
-
 }

@@ -1,16 +1,21 @@
-import { test, expect } from "@playwright/test";
-import LoginPage from "../pages/LoginPage";
-import { ROUTES } from "../utils/constantsUtils";
+import { test, expect } from "../fixtures/baseFixture.js";
+import { ROUTES, CREDS, MESSAGES } from "../utils/constantsUtils.js";
 
-
-test("Login With Valid Cred", async({ page })=>{
-
-    const loginPage = new LoginPage(page);
-    
-    // Open the URL 
-    await loginPage.open(ROUTES.LOGIN);
-    // Enter ID Password
-    await loginPage.login("standard_user", "secret_sauce");
-    // Validation
-    await expect(page.locator(".title")).toHaveText("Products");
+test("Validate Successful Login", async({ loggedInToApp  }) => {
+    console.log("Login Validated")
 })
+
+test("Validate Error Message", async ({ loginPage }) => {
+
+    await loginPage.op
+
+
+
+
+
+
+    // await loginPage.open(ROUTES.LOGIN);
+    // await loginPage.login(CREDS.locked_out_user, CREDS.password);
+    // const receivedErrorMessage = await loginPage.errorMessageBox.innerText();
+    // expect(receivedErrorMessage).toBe(MESSAGES.INVALID_CREDENTIALS);
+});

@@ -16,4 +16,11 @@ const TITLES = {
     YOUR_CART : "Your Cart"
 }
 
-export { ROUTES, MESSAGES, TITLES }
+const CREDS = {
+    standard_User : "standard_user",
+    locked_out_user : "locked_out_user ",
+    problem_user : "problem_user", 
+    password : "secret_sauce"
+}
+
+export { ROUTES, MESSAGES, TITLES, CREDS }

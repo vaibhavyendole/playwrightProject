@@ -1,36 +1,36 @@
 
-import { _basePage } from './_basePage';
+// import { _basePage } from './_basePage';
 
 
-export class orangeLoginPage extends _basePage{
+// export class orangeLoginPage extends _basePage{
 
-    /**
-     * @param {import('@playwright/test').Page} page
-     */
-    constructor(page){
-        super(page); // Calls the BasePage constructor and initializes this.page
+//     /**
+//      * @param {import('@playwright/test').Page} page
+//      */
+//     constructor(page){
+//         super(page); // Calls the BasePage constructor and initializes this.page
 
-        // Login Page Locators
-       // /** @type {import('@playwright/test').Locator} */
-        this.userNameInput = page.getByRole("textbox", { name : 'Username'});
-        this.passwordInput = page.getByRole("textbox", { name : 'Password'});
-        this.loginBtn = page.getByRole("button", { name : 'Login'});
-        this.loginTitle = page.locator('h5');
-        this.OrganeHrmUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
-    }
+//         // Login Page Locators
+//        // /** @type {import('@playwright/test').Locator} */
+//         this.userNameInput = page.getByRole("textbox", { name : 'Username'});
+//         this.passwordInput = page.getByRole("textbox", { name : 'Password'});
+//         this.loginBtn = page.getByRole("button", { name : 'Login'});
+//         this.loginTitle = page.locator('h5');
+//         this.OrganeHrmUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+//     }
 
-    // Navigate to OrangeHRM Login Page
-    async enterOrangeHrmUrl(){
-        this.navigateToUrl(this.OrganeHrmUrl)
-    }
-
-    
-
-
-
-
+//     // Navigate to OrangeHRM Login Page
+//     async enterOrangeHrmUrl(){
+//         this.navigateToUrl(this.OrganeHrmUrl)
+//     }
 
     
 
 
-}
+
+
+
+    
+
+
+// }

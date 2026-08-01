@@ -1,5 +1,5 @@
 {
-    "name" : "dev", 
+    "name" : "qa", 
     "baseURL" : "https://saucedemo.com", 
     "credentials" : {
         "password" : "secret_sauce", 

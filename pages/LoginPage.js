@@ -9,6 +9,7 @@ class LoginPage extends BasePage{
         this.username       = page.getByRole('textbox', { name: 'Username' });
         this.password       = page.getByRole('textbox', { name: 'Password' });
         this.loginButton    = page.getByRole("button", { name : "Login"});
+        this.errorMessageBox = page.locator("//h3");
     }
 
     async open(value){
