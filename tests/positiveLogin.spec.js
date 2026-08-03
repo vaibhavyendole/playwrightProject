@@ -7,15 +7,8 @@ test("Validate Successful Login", async({ loggedInToApp  }) => {
 
 test("Validate Error Message", async ({ loginPage }) => {
 
-    await loginPage.op
-
-
-
-
-
-
-    // await loginPage.open(ROUTES.LOGIN);
-    // await loginPage.login(CREDS.locked_out_user, CREDS.password);
-    // const receivedErrorMessage = await loginPage.errorMessageBox.innerText();
-    // expect(receivedErrorMessage).toBe(MESSAGES.INVALID_CREDENTIALS);
+    await loginPage.open(ROUTES.LOGIN);
+    await loginPage.login(CREDS.locked_out_user, CREDS.password);
+    const receivedErrorMessage = await loginPage.errorMessageBox.innerText();
+    expect(receivedErrorMessage).toBe(MESSAGES.INVALID_CREDENTIALS);
 });
